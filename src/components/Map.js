@@ -26,16 +26,13 @@ class MapContainer extends Component {
     };
 
   render() {
-	  console.log(icon)
     return (
         <Map
           google={this.props.google}
           zoom={8}
           style = {this.mapStyles()}
 	  initialCenter={{ lat: 37.78, lng: -122.44}}
-          icon = {icon}
 	>
-		<img src ={icon}/>
           {this.displayMarkers()}
         </Map>
     );

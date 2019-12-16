@@ -17,7 +17,6 @@ componentDidMount() {
 	.catch(err=> console.log(err))
 }
   render() {
-console.log(this.state.title)
     return (
       <div className="app">
         <div className="mapContainer">
